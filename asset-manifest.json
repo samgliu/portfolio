@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.c6bd7fff.css",
-    "main.js": "/portfolio/static/js/main.0503ff6f.js",
+    "main.css": "/portfolio/static/css/main.907fa2ec.css",
+    "main.js": "/portfolio/static/js/main.f3fecc2a.js",
     "static/media/instagramClone.png": "/portfolio/static/media/instagramClone.9588ee8c306f564c2b68.png",
     "static/media/odinBook.png": "/portfolio/static/media/odinBook.3c47c3b19dd86984c4ce.png",
     "static/media/theOdinProject.png": "/portfolio/static/media/theOdinProject.7701dc38eaf72962818b.png",
     "index.html": "/portfolio/index.html",
-    "main.c6bd7fff.css.map": "/portfolio/static/css/main.c6bd7fff.css.map",
-    "main.0503ff6f.js.map": "/portfolio/static/js/main.0503ff6f.js.map"
+    "main.907fa2ec.css.map": "/portfolio/static/css/main.907fa2ec.css.map",
+    "main.f3fecc2a.js.map": "/portfolio/static/js/main.f3fecc2a.js.map"
   },
   "entrypoints": [
-    "static/css/main.c6bd7fff.css",
-    "static/js/main.0503ff6f.js"
+    "static/css/main.907fa2ec.css",
+    "static/js/main.f3fecc2a.js"
   ]
 }
