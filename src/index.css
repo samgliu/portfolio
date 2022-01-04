@@ -82,6 +82,7 @@ a {
     min-width: 350px;
     width: 30%;
     height: 62vh;
+    min-height: 675px;
     display: flex;
     flex-direction: column;
     justify-content: center;
