@@ -133,7 +133,6 @@ a {
     padding: 5%;
     line-height: 1.8em;
     text-indent: 2em;
-
     width: 60%;
 }
 
@@ -159,10 +158,6 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-    .self {
-        width: 90%;
-        max-width: 400px;
-    }
     .switch {
         display: none;
     }
