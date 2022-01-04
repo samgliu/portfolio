@@ -10,9 +10,8 @@ function Home() {
             <div className="body">
                 <h1>Portfolio</h1>
                 <Portfolios />
-                <Self />
             </div>
-
+            <Self />
             <Contact />
         </div>
     );
