@@ -19,6 +19,12 @@ function Portfolio({ project }) {
                     <img src={project.picture} alt="" />
                 </a>
                 <p>{project.description}</p>
+                <div className="features-container">
+                    {project.features.map((feature) => {
+                        return <span>{feature}</span>;
+                    })}
+                </div>
+
                 <a
                     href={project.link}
                     target="_blank"
