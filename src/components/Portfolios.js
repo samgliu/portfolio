@@ -16,6 +16,7 @@ function Portfolios() {
                 builtwith: ['Node.js', 'Express', 'MongoDB', 'React'],
                 description: ['A social web app built with MERN.'],
                 link: 'https://samgliu.github.io/Odinbook-Client',
+                repo: 'https://github.com/samgliu/Odinbook-Client',
             },
             {
                 key: '02',
@@ -24,6 +25,7 @@ function Portfolios() {
                 builtwith: ['REACT', 'HTML', 'Javascript', 'CSS'],
                 description: ['A Instagram clone web app built with React.'],
                 link: 'https://samgliu.github.io/instagram-clone',
+                repo: 'https://github.com/samgliu/instagram-clone',
             },
             {
                 key: '03',
@@ -34,6 +36,7 @@ function Portfolios() {
                     'A The Odin Project webpage clone with a simple CSS framework I made',
                 ],
                 link: 'https://samgliu.github.io/css-framework-grid-based/',
+                repo: 'https://github.com/samgliu/css-framework-grid-based',
             },
         ]);
     }, []);

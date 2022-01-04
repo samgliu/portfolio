@@ -134,6 +134,7 @@ a {
     line-height: 1.8em;
     text-indent: 2em;
     width: 60%;
+    min-width: 350px;
 }
 
 /* contact */
@@ -154,7 +155,7 @@ a {
 .contact div a {
     display: flex;
     align-items: center;
-    gap: 0.1em;
+    gap: 0.5em;
 }
 
 @media screen and (max-width: 768px) {

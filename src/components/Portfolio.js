@@ -26,6 +26,13 @@ function Portfolio({ project }) {
                 >
                     Live Demo
                 </a>
+                <a
+                    href={project.repo}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                >
+                    Repository
+                </a>
             </div>
         );
     } else {
