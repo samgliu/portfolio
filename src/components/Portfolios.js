@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import Portfolio from './Portfolio';
 import odinBookPic from '../images/odinBook.png';
 import instagramPic from '../images/instagramClone.png';
+import ECPic from '../images/ecommerce.png';
 import TOPPic from '../images/theOdinProject.png';
 
 function Portfolios() {
@@ -43,6 +44,18 @@ function Portfolios() {
             },
             {
                 key: '03',
+                name: 'E-commerce store',
+                picture: ECPic,
+                builtwith: ['React', 'HTML', 'CSS', 'JavaScript'],
+                description: [
+                    'A single page e-commerce store web application with React framework',
+                ],
+                features: ['Single page web app', 'Responsive view'],
+                link: 'https://samgliu.github.io/Shopping-Cart/',
+                repo: 'https://github.com/samgliu/Shopping-Cart',
+            },
+            {
+                key: '04',
                 name: 'TOP page clone',
                 picture: TOPPic,
                 builtwith: ['HTML', 'CSS', 'SCSS'],
