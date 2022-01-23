@@ -4,6 +4,8 @@ import odinBookPic from '../images/odinBook.png';
 import instagramPic from '../images/instagramClone.png';
 import ECPic from '../images/ecommerce.png';
 import TOPPic from '../images/theOdinProject.png';
+import blogPic from '../images/blog.png';
+import memberPic from '../images/memberOnly.png';
 
 function Portfolios() {
     const [projects, setProjects] = useState([]);
@@ -48,7 +50,7 @@ function Portfolios() {
                 picture: ECPic,
                 builtwith: ['React', 'HTML', 'CSS', 'JavaScript'],
                 description: [
-                    'A single page e-commerce store web application with React framework',
+                    'A single page e-commerce store web application built with React framework',
                 ],
                 features: ['Single page web app', 'Responsive view'],
                 link: 'https://samgliu.github.io/Shopping-Cart/',
@@ -65,6 +67,28 @@ function Portfolios() {
                 features: ['Grid based CSS framework', 'Responsive view'],
                 link: 'https://samgliu.github.io/css-framework-grid-based/',
                 repo: 'https://github.com/samgliu/css-framework-grid-based',
+            },
+            {
+                key: '05',
+                name: 'Blog API',
+                picture: blogPic,
+                builtwith: ['HTML', 'CSS', 'Node.js', 'Express'],
+                description: ['A blog api Full-stack web application'],
+                features: ['BLOG API', 'User Authorization'],
+                link: 'https://samgliu.github.io/THO-blog-api-client/',
+                repo: 'https://github.com/samgliu/THO-blog-api',
+            },
+            {
+                key: '06',
+                name: 'Member Only message board',
+                picture: memberPic,
+                builtwith: ['Node.js', 'Express', 'EJS'],
+                description: [
+                    'A member only message board with user authorization level system.',
+                ],
+                features: ['User Authorization level', 'backend rendering'],
+                link: 'https://rocky-coast-73275.herokuapp.com/',
+                repo: 'https://github.com/samgliu/THO-members-only',
             },
         ]);
     }, []);
