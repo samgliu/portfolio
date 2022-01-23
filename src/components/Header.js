@@ -11,9 +11,6 @@ function Header() {
                     <Link to="#portfolio">Portfolio</Link>
                 </li>
                 <li>
-                    <a href="/portfolio/Sam_Liu_Resume.pdf">Resume</a>
-                </li>
-                <li>
                     <Link to="#contact">Contact</Link>
                 </li>
             </ul>
