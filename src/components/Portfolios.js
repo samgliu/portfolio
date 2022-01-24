@@ -50,9 +50,12 @@ function Portfolios() {
                 picture: ECPic,
                 builtwith: ['React', 'HTML', 'CSS', 'JavaScript'],
                 description: [
-                    'A single page e-commerce store web application built with React framework',
+                    'A e-commerce store web application built with React',
                 ],
-                features: ['Single page web app', 'Responsive view'],
+                features: [
+                    'Single Page Application Architecture',
+                    'Responsive view',
+                ],
                 link: 'https://samgliu.github.io/Shopping-Cart/',
                 repo: 'https://github.com/samgliu/Shopping-Cart',
             },
