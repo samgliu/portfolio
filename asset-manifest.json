@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.3a62716f.css",
-    "main.js": "/portfolio/static/js/main.100625bc.js",
+    "main.css": "/portfolio/static/css/main.64d453cc.css",
+    "main.js": "/portfolio/static/js/main.419b642c.js",
     "static/media/instagramClone.png": "/portfolio/static/media/instagramClone.9588ee8c306f564c2b68.png",
     "static/media/ecommerce.png": "/portfolio/static/media/ecommerce.f9b5d801af5ace91d6f5.png",
     "static/media/blog.png": "/portfolio/static/media/blog.bea0f1f8adb6de65fe13.png",
@@ -9,11 +9,11 @@
     "static/media/odinBook.png": "/portfolio/static/media/odinBook.3c47c3b19dd86984c4ce.png",
     "static/media/theOdinProject.png": "/portfolio/static/media/theOdinProject.7701dc38eaf72962818b.png",
     "index.html": "/portfolio/index.html",
-    "main.3a62716f.css.map": "/portfolio/static/css/main.3a62716f.css.map",
-    "main.100625bc.js.map": "/portfolio/static/js/main.100625bc.js.map"
+    "main.64d453cc.css.map": "/portfolio/static/css/main.64d453cc.css.map",
+    "main.419b642c.js.map": "/portfolio/static/js/main.419b642c.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a62716f.css",
-    "static/js/main.100625bc.js"
+    "static/css/main.64d453cc.css",
+    "static/js/main.419b642c.js"
   ]
 }
