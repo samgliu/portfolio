@@ -54,7 +54,7 @@ function Portfolios() {
                 ],
                 features: [
                     'Single Page Application Architecture',
-                    'Responsive view',
+                    'Responsive View',
                 ],
                 link: 'https://samgliu.github.io/Shopping-Cart/',
                 repo: 'https://github.com/samgliu/Shopping-Cart',
