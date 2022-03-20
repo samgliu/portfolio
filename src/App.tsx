@@ -1,3 +1,4 @@
+import React from 'react';
 import MyRoutes from './components/MyRoutes';
 function App() {
     return (

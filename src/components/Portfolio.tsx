@@ -1,12 +1,18 @@
+import React from "react";
+import { ProjectType } from "./Portfolios";
 const { v4: uuidv4 } = require('uuid');
 
-function Portfolio({ project }) {
+interface Props {
+    project: ProjectType;
+}
+
+function Portfolio({ project }: Props) {
     if (project) {
         return (
             <div className="portfolio" id="portfolio">
                 <h2>{project.name}</h2>
                 <div className="builtwith">
-                    {project.builtwith.map((el) => {
+                    {project.builtwith.map((el: boolean | React.ReactChild | React.ReactFragment | React.ReactPortal | null | undefined) => {
                         return <span key={uuidv4()}>{el}</span>;
                     })}
                 </div>
