@@ -1,3 +1,5 @@
+import React from "react";
+
 function Self() {
     return (
         <div className="self">
