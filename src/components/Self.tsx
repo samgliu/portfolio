@@ -1,17 +1,18 @@
-import React from "react";
+import React from 'react';
 
 function Self() {
-    return (
-        <div className="self">
-            <p>
-                My name is Sam Liu. I graduated from school with a Computer
-                Science A.S. degree in Dec. 2021. Meanwhile, I built excellent
-                web applications while following a full-stack path in The Odin
-                Project, an open-source coding curriculum. I am seeking a web
-                development job and am very motivated to learn and code.
-            </p>
-        </div>
-    );
+  return (
+    <div className="self">
+      <p>
+        Hi, I'm Sam Liu, a web developer with experience building excellent web
+        applications. I honed my skills by following The Odin Project, an
+        open-source coding curriculum, and I continue to be motivated to learn
+        and code every day. I am also currently pursuing a graduate program to
+        further develop my expertise and stay up-to-date with the latest
+        industry trends. Let's connect and collaborate on exciting projects!
+      </p>
+    </div>
+  );
 }
 
 export default Self;

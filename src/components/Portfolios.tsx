@@ -1,12 +1,13 @@
 import { useEffect, useState } from 'react';
-import Portfolio from './Portfolio';
-import odinBookPic from '../images/odinBook.png';
-import instagramPic from '../images/instagramClone.png';
+
 import ECPic from '../images/ecommerce.png';
+import Portfolio from './Portfolio';
+import React from 'react';
 import TOPPic from '../images/theOdinProject.png';
 import blogPic from '../images/blog.png';
-import memberPic from '../images/memberOnly.png';
-import React from 'react';
+import dataVizPic from '../images/dataVizPic.png';
+import instagramPic from '../images/instagramClone.png';
+import odinBookPic from '../images/odinBook.png';
 
 export type ProjectType = {
   key: string;
@@ -58,6 +59,16 @@ function Portfolios() {
       },
       {
         key: '03',
+        name: 'Data Visualization',
+        picture: dataVizPic,
+        builtwith: ['Typescript', 'D3', 'React', 'vega-lite'],
+        description: ['A data visualization web app built with React and D3 libraries.'],
+        features: ['Data Visualization'],
+        link: 'https://samgliu.github.io/data_visualization_demo/',
+        repo: 'https://github.com/samgliu/data_visualization_demo',
+      },
+      {
+        key: '04',
         name: 'E-commerce store',
         picture: ECPic,
         builtwith: ['React', 'HTML', 'CSS', 'JavaScript'],
@@ -67,7 +78,7 @@ function Portfolios() {
         repo: 'https://github.com/samgliu/Shopping-Cart',
       },
       {
-        key: '04',
+        key: '05',
         name: 'TOP page clone',
         picture: TOPPic,
         builtwith: ['HTML', 'CSS', 'SCSS'],
@@ -79,7 +90,7 @@ function Portfolios() {
         repo: 'https://github.com/samgliu/css-framework-grid-based',
       },
       {
-        key: '05',
+        key: '06',
         name: 'Blog API',
         picture: blogPic,
         builtwith: ['HTML', 'CSS', 'Node.js', 'Express'],
@@ -87,18 +98,6 @@ function Portfolios() {
         features: ['BLOG API', 'User Authorization'],
         link: 'https://samgliu.github.io/THO-blog-api-client/',
         repo: 'https://github.com/samgliu/THO-blog-api',
-      },
-      {
-        key: '06',
-        name: 'Member Only message board',
-        picture: memberPic,
-        builtwith: ['Node.js', 'Express', 'EJS'],
-        description: [
-          'A member only message board with user authorization level system.',
-        ],
-        features: ['User Authorization level', 'backend rendering'],
-        link: 'https://rocky-coast-73275.herokuapp.com/',
-        repo: 'https://github.com/samgliu/THO-members-only',
       },
     ]);
   }, []);
