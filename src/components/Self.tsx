@@ -4,12 +4,14 @@ function Self() {
   return (
     <div className="self">
       <p>
-        Hi, I'm Sam Liu, a web developer with experience building excellent web
-        applications. I honed my skills by following The Odin Project, an
-        open-source coding curriculum, and I continue to be motivated to learn
-        and code every day. I am also currently pursuing a graduate program to
-        further develop my expertise and stay up-to-date with the latest
-        industry trends. Let's connect and collaborate on exciting projects!
+        Hi, I'm Sam Liu, a passionate web developer with a strong track record
+        of building impactful web applications. My journey began with The Odin
+        Project, an open-source coding curriculum that laid the foundation for
+        my technical expertise. Since then, I've continued to expand my skills,
+        now furthering my education with a Master of Science in Computer Science
+        from Georgia Tech. I'm dedicated to staying ahead of industry trends and
+        continuously improving my craft. Let's connect and collaborate on
+        innovative projects that make a difference!
       </p>
     </div>
   );
