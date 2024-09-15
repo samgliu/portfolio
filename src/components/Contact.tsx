@@ -20,7 +20,7 @@ function Contact() {
       <div>
         <a href="mailto:samgliu19@gmail.com">
           <FaEnvelope />
-          Email<span className="switch">: samgliu19@gmail.com</span>
+          <span className="switch">Email: samgliu19@gmail.com</span>
         </a>
       </div>
     </div>
