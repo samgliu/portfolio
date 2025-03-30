@@ -78,9 +78,11 @@ function Portfolio({ project }: Props) {
               gap: '0.5rem',
             }}
           >
-            <a href={project.link} target="_blank" rel="noreferrer noopener">
-              Live Demo
-            </a>
+            {project.link ? (
+              <a href={project.link} target="_blank" rel="noreferrer noopener">
+                Live Demo
+              </a>
+            ) : null}
             <a href={project.repo} target="_blank" rel="noreferrer noopener">
               Repository
             </a>

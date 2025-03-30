@@ -4,10 +4,10 @@ import ECPic from '../images/ecommerce.png';
 import Portfolio from './Portfolio';
 import React from 'react';
 import TOPPic from '../images/theOdinProject.png';
-import blogPic from '../images/blog.png';
 import dataVizPic from '../images/dataVizPic.png';
 import instagramPic from '../images/instagramClone.png';
 import odinBookPic from '../images/odinBook.png';
+import stockSensePic from '../images/stockSense.png';
 
 export type ProjectType = {
   key: string;
@@ -16,7 +16,7 @@ export type ProjectType = {
   builtwith: string[];
   description: string[];
   features: string[];
-  link: string;
+  link?: string;
   repo: string;
 };
 
@@ -25,6 +25,21 @@ function Portfolios() {
 
   useEffect(() => {
     setProjects([
+      {
+        key: '00',
+        name: 'StockSense',
+        picture: stockSensePic,
+        builtwith: ['React', 'FastAPI', 'Airflow', 'PostgreSQL', 'Docker'],
+        description: [
+          'AI-powered stock analysis and semantic search platform.',
+        ],
+        features: [
+          'Semantic Search',
+          'AI Powered Stock Analysis',
+          'Vector Database Integration',
+        ],
+        repo: 'https://github.com/samgliu/stocksense',
+      },
       {
         key: '01',
         name: 'Odin Book',
@@ -62,7 +77,9 @@ function Portfolios() {
         name: 'Data Visualization',
         picture: dataVizPic,
         builtwith: ['Typescript', 'D3', 'React', 'vega-lite'],
-        description: ['A data visualization web app built with React and D3 libraries.'],
+        description: [
+          'A data visualization web app built with React and D3 libraries.',
+        ],
         features: ['Data Visualization'],
         link: 'https://samgliu.github.io/data_visualization_demo/',
         repo: 'https://github.com/samgliu/data_visualization_demo',
@@ -88,16 +105,6 @@ function Portfolios() {
         features: ['Grid based CSS framework', 'Responsive view'],
         link: 'https://samgliu.github.io/css-framework-grid-based/',
         repo: 'https://github.com/samgliu/css-framework-grid-based',
-      },
-      {
-        key: '06',
-        name: 'Blog API',
-        picture: blogPic,
-        builtwith: ['HTML', 'CSS', 'Node.js', 'Express'],
-        description: ['A blog api Full-stack web application'],
-        features: ['BLOG API', 'User Authorization'],
-        link: 'https://samgliu.github.io/THO-blog-api-client/',
-        repo: 'https://github.com/samgliu/THO-blog-api',
       },
     ]);
   }, []);
