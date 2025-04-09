@@ -30,7 +30,7 @@ function Portfolios() {
         name: 'StockSense',
         picture: stockSensePic,
         builtwith: [
-          'React',
+          'Kubernetes',
           'FastAPI',
           'Airflow',
           'PostgreSQL',
@@ -44,8 +44,8 @@ function Portfolios() {
         features: [
           'Semantic Search',
           'AI-Generated Analysis',
-          'Automated ETL with Airflow DAGs',
         ],
+        link: 'https://samgliu.github.io/stocksense/',
         repo: 'https://github.com/samgliu/stocksense',
       },
       {
