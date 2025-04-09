@@ -30,7 +30,7 @@ function Portfolios() {
         name: 'StockSense',
         picture: stockSensePic,
         builtwith: [
-          'Kubernetes',
+          'K8S',
           'FastAPI',
           'Airflow',
           'PostgreSQL',
