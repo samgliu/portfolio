@@ -36,15 +36,11 @@ function Portfolios() {
           'PostgreSQL',
           'Kafka',
           'LangGraph',
-          'Docker',
         ],
         description: [
-          'AI-powered stock analysis and semantic search platform combining financial data with LLM-powered insights.',
+          'AI-powered stock analysis and semantic search platform combining financial data with LLM-powered insights and an intelligent trading agent.',
         ],
-        features: [
-          'Semantic Search',
-          'AI-Generated Analysis',
-        ],
+        features: ['Semantic Search', 'AI-Generated Analysis', 'AI Agent'],
         link: 'https://samgliu.github.io/stocksense/',
         repo: 'https://github.com/samgliu/stocksense',
       },
