@@ -29,19 +29,9 @@ function Portfolio({ project }: Props) {
         >
           <h2>{project.name}</h2>
           <div className="builtwith">
-            {project.builtwith.map(
-              (
-                el:
-                  | boolean
-                  | React.ReactChild
-                  | React.ReactFragment
-                  | React.ReactPortal
-                  | null
-                  | undefined
-              ) => {
-                return <span key={uuidv4()}>{el}</span>;
-              }
-            )}
+            {project.builtwith.map((el: React.ReactNode) => {
+              return <span key={uuidv4()}>{el}</span>;
+            })}
           </div>
         </div>
 
@@ -65,8 +55,8 @@ function Portfolio({ project }: Props) {
               alignItems: 'center',
             }}
           >
-            {project.features.map((feature) => {
-              return <span>{feature}</span>;
+            {project.features.map((feature, idx) => {
+              return <span key={idx}>{feature}</span>;
             })}
           </div>
           <div
