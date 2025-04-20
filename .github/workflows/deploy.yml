@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Change this if your default branch is not 'main'
+      - main
 
 permissions:
   contents: read
@@ -21,18 +21,18 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'  # Specify the Node.js version you are using
+          node-version: '22'
 
       - name: Install dependencies
-        run: yarn install  # Use yarn to install dependencies
+        run: yarn install
 
       - name: Build the app
-        run: yarn build  # Use yarn to build the app
+        run: yarn build
 
       - name: Upload production-ready build files
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './build'  # The folder where your app gets built
+          path: './build'
 
   deploy:
     needs: build
@@ -41,8 +41,8 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     permissions:
-      pages: write      # To deploy to Pages
-      id-token: write   # To authenticate on behalf of the GitHub Actions app
+      pages: write
+      id-token: write
 
     steps:
       - name: Deploy to GitHub Pages
