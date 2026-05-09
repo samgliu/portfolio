@@ -31,22 +31,23 @@ function Portfolios() {
         builtwith: [
           'Python',
           'FastAPI',
+          'FastMCP',
           'React',
           'TypeScript',
           'SQLite',
           'Docker',
-          'MCP',
         ],
         description: [
-          'In-development OpenAI Agents-compatible trace operations dashboard for debugging, evaluating, and monitoring multi-agent AI workflows.',
+          'AI agent trace system for inspecting OpenAI Agents-compatible runs, tool calls, evaluations, and FastMCP-powered workflows.',
         ],
         features: [
-          'Multi-Agent Workflows',
-          'Trace Dashboard',
+          'Agent Trace System',
+          'Tool Call Inspection',
           'Live Ingestion',
-          'MCP Tools',
+          'FastMCP Tools',
         ],
         repo: 'https://github.com/samgliu/agent-trace/tree/development',
+
       },
       {
         key: '01',
