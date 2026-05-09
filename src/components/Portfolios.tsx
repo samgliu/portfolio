@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react';
 
-import ECPic from '../images/ecommerce.png';
+import agentTracePic from '../images/agentTrace.png';
 import Portfolio from './Portfolio';
 import React from 'react';
-import TOPPic from '../images/theOdinProject.png';
 import dataVizPic from '../images/dataVizPic.png';
 import instagramPic from '../images/instagramClone.png';
 import odinBookPic from '../images/odinBook.png';
@@ -27,6 +26,30 @@ function Portfolios() {
     setProjects([
       {
         key: '00',
+        name: 'AgentTrace',
+        picture: agentTracePic,
+        builtwith: [
+          'Python',
+          'FastAPI',
+          'React',
+          'TypeScript',
+          'SQLite',
+          'Docker',
+          'MCP',
+        ],
+        description: [
+          'In-development OpenAI Agents-compatible trace operations dashboard for debugging, evaluating, and monitoring multi-agent AI workflows.',
+        ],
+        features: [
+          'Multi-Agent Workflows',
+          'Trace Dashboard',
+          'Live Ingestion',
+          'MCP Tools',
+        ],
+        repo: 'https://github.com/samgliu/agent-trace/tree/development',
+      },
+      {
+        key: '01',
         name: 'StockSense',
         picture: stockSensePic,
         builtwith: [
@@ -43,18 +66,6 @@ function Portfolios() {
         features: ['Semantic Search', 'AI-Generated Analysis', 'AI Agent'],
         link: 'https://samgliu.github.io/stocksense/',
         repo: 'https://github.com/samgliu/stocksense',
-      },
-      {
-        key: '01',
-        name: 'Data Visualization',
-        picture: dataVizPic,
-        builtwith: ['TypeScript', 'D3', 'React', 'Vega-Lite'],
-        description: [
-          'A data visualization web app built with React and D3 libraries.',
-        ],
-        features: ['Data Visualization'],
-        link: 'https://samgliu.github.io/data_visualization_demo/',
-        repo: 'https://github.com/samgliu/data_visualization_demo',
       },
       {
         key: '02',
@@ -90,25 +101,15 @@ function Portfolios() {
       },
       {
         key: '04',
-        name: 'E-commerce store',
-        picture: ECPic,
-        builtwith: ['React', 'HTML', 'CSS', 'JavaScript'],
-        description: ['A e-commerce store web application built with React'],
-        features: ['Single Page Application Architecture', 'Responsive View'],
-        link: 'https://samgliu.github.io/Shopping-Cart/',
-        repo: 'https://github.com/samgliu/Shopping-Cart',
-      },
-      {
-        key: '05',
-        name: 'TOP page clone',
-        picture: TOPPic,
-        builtwith: ['HTML', 'CSS', 'SCSS'],
+        name: 'Data Visualization',
+        picture: dataVizPic,
+        builtwith: ['TypeScript', 'D3', 'React', 'Vega-Lite'],
         description: [
-          'A The Odin Project webpage clone with a simple CSS framework I made',
+          'A data visualization web app built with React and D3 libraries.',
         ],
-        features: ['Grid based CSS framework', 'Responsive view'],
-        link: 'https://samgliu.github.io/css-framework-grid-based/',
-        repo: 'https://github.com/samgliu/css-framework-grid-based',
+        features: ['Data Visualization'],
+        link: 'https://samgliu.github.io/data_visualization_demo/',
+        repo: 'https://github.com/samgliu/data_visualization_demo',
       },
     ]);
   }, []);
