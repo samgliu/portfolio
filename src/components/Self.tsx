@@ -4,14 +4,11 @@ function Self() {
   return (
     <div className="self">
       <p>
-        Hi, I’m Sam Liu — a passionate web developer with a strong track record
-        of building impactful web applications. I began my journey with The Odin
-        Project, an open-source coding curriculum that laid the foundation for
-        my technical skills. Since then, I’ve continued to grow as a developer
-        and earned my Master’s in Computer Science from Georgia Tech. I’m
-        committed to staying ahead of industry trends, honing my skills, and
-        collaborating on innovative projects that make a real difference. Let’s
-        connect!
+        Hi, I’m Sam Liu, a full-stack software engineer focused on web applications, AI-integrated systems, and data-driven products.
+
+        I started my coding journey with The Odin Project and later earned my Master’s in Computer Science from Georgia Tech. I enjoy working with React, TypeScript, Python, backend APIs, LLM workflows, and semantic search.
+
+        I like building practical products that solve real problems and create better user experiences. Let’s connect.
       </p>
     </div>
   );
