@@ -29,3 +29,4 @@ yarn-error.log*
 *Zone.Identifier
 
 *.pdf
+dist/*
