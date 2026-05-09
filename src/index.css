@@ -7,6 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(120deg, #f7fafd 0%, #f2f4f8 100%);
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 /* reset */
@@ -35,6 +36,7 @@ a {
   top: 0;
   left: 0;
   width: 100%;
+  box-sizing: border-box;
   height: 58px;
   display: flex;
   flex-direction: row;
@@ -53,11 +55,11 @@ a {
   border-radius: 0 0 1em 1em;
 }
 .header > ul {
-  padding-right: 1em;
   display: flex;
   flex-direction: row;
   gap: 0.45em;
   align-items: center;
+  max-width: 100%;
 }
 
 .header > ul li {
@@ -95,57 +97,95 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 2em;
-  padding: 6em 2em 2em 2em;
+  gap: 2.5em;
+  padding: 6.25em 2em 2em 2em;
+}
+.portfolio-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6em;
+  width: 100%;
+}
+.portfolio-section h1 {
+  font-size: 2.1em;
+  line-height: 1.15;
 }
 
 /* portfolios */
 .portfolios {
   display: flex;
   justify-content: center;
-  gap: 1%;
-  align-items: center;
+  gap: 1.4em;
+  align-items: stretch;
   flex-wrap: wrap;
+  scroll-margin-top: 84px;
 }
 .portfolio {
-  max-width: 400px;
+  box-sizing: border-box;
+  max-width: 390px;
   min-width: 320px;
-  width: 31%;
-  height: 650px;
-  min-height: 650px;
+  width: min(31%, 390px);
+  min-height: 560px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  gap: 1em;
-  border-radius: 1em;
+  gap: 1.1em;
+  border-radius: 0.75em;
   overflow: hidden;
   box-shadow: 0 4px 16px 0 rgba(60, 72, 100, 0.1),
     0 1.5px 8px 0 rgba(60, 60, 60, 0.04);
   background: #fdfdfe;
-  padding: 1.5em 1em;
-  margin: 1em 1em 2em 0;
+  padding: 1.35em 1.1em;
+  margin: 0 0 1.4em 0;
   transition: box-shadow 0.2s, transform 0.2s;
 }
 .portfolio:hover {
   box-shadow: 0 12px 32px 0 rgba(31, 38, 135, 0.18),
     0 3px 12px 0 rgba(60, 60, 60, 0.14);
-  transform: translateY(-4px) scale(1.02);
+  transform: translateY(-4px);
 }
-.portfolio a {
+.portfolio-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  text-align: center;
+  width: 100%;
+}
+.portfolio h2 {
+  font-size: 1.45em;
+  line-height: 1.2;
+}
+.portfolio-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.85rem;
+  justify-content: flex-end;
+  width: 100%;
+}
+.portfolio-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.65rem;
+  margin-top: 0.15rem;
+}
+.portfolio-actions a {
   font-size: 1.07em;
   font-weight: 600;
   color: #2563eb;
   background: #e3eefe;
   border-radius: 0.5em;
   padding: 0.4em 1.2em;
-  margin: 0.2em 0.4em;
+  margin: 0;
   text-decoration: none;
   box-shadow: 0 1px 2px rgba(60, 60, 60, 0.07);
   transition: background 0.2s, color 0.2s, box-shadow 0.2s;
   display: inline-block;
 }
-.portfolio a:hover {
+.portfolio-actions a:hover {
   background: #f6fafd;
   color: #1d3a6b;
   box-shadow: 0 2px 8px rgba(31, 38, 135, 0.1);
@@ -154,34 +194,49 @@ a {
 }
 .portfolio p {
   text-align: center;
+  color: #374151;
+  font-size: 0.97em;
+  line-height: 1.35;
+}
+.portfolio-preview {
+  display: block;
+  width: 100%;
+  margin: 0.1em 0 0.2em;
+  border-radius: 0.65em;
+  background: #eaf2ff;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.portfolio-preview:hover {
+  box-shadow: 0 6px 18px rgba(31, 38, 135, 0.14);
+  transform: translateY(-2px);
 }
 .portfolio img {
   width: 100%;
-  max-width: 350px;
-  max-height: 220px;
+  height: 210px;
   object-fit: cover;
-  border-radius: 0.7em;
+  object-position: top center;
+  border-radius: 0.65em;
   box-shadow: 0 2px 8px rgba(31, 38, 135, 0.08);
   background: #f3f6fa;
+  display: block;
 }
 .builtwith {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5em;
+  gap: 0.45em;
   justify-content: center;
   max-width: 100%;
-  margin-bottom: 0.5em;
 }
 .builtwith > * {
-  font-size: 0.85em;
+  font-size: 0.78em;
   background: #f6fafd;
   color: #2563eb;
   padding: 0.18em 0.7em;
-  border-radius: 0.5em;
-  margin: 0.15em 0.15em 0 0.15em;
+  border-radius: 0.45em;
+  margin: 0;
   box-shadow: 0 1px 2px rgba(31, 38, 135, 0.07);
   font-weight: 600;
-  letter-spacing: 0.01em;
+  letter-spacing: 0;
   max-width: 120px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -191,15 +246,17 @@ a {
 .features-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 1em;
+  gap: 0.55em;
+  justify-content: center;
+  align-items: center;
 }
 .features-container > * {
   background: #f3f6fa;
   color: #334155;
-  padding: 0.22em 0.8em;
-  border-radius: 0.5em;
-  margin: 0 0.13em;
-  font-size: 0.94em;
+  padding: 0.22em 0.65em;
+  border-radius: 0.45em;
+  margin: 0;
+  font-size: 0.86em;
   font-weight: 500;
   box-shadow: 0 1px 2px rgba(31, 38, 135, 0.06);
 }
@@ -209,15 +266,19 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
+  width: min(920px, 100%);
+  padding: 0.75em 1em 0.25em;
+  scroll-margin-top: 84px;
 }
 .self p {
-  font-size: 1.2em;
+  font-size: 1.08em;
   font-weight: 500;
-  padding: 5%;
-  line-height: 1.8em;
-  text-indent: 2em;
-  width: 60%;
-  min-width: 350px;
+  line-height: 1.75;
+  max-width: 760px;
+  min-width: 0;
+  text-align: center;
+  color: #263241;
 }
 
 /* contact */
@@ -226,19 +287,29 @@ a {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 2%;
-  margin-bottom: 3%;
+  flex-wrap: wrap;
+  gap: 0.8em;
+  margin: 0 auto 3%;
+  padding: 0 1em;
+  scroll-margin-top: 84px;
 }
 .contact div a {
   text-decoration: none;
   font-size: 1.1em;
   font-weight: 500;
-  color: #2d90c9;
+  color: #1d4ed8;
 }
 .contact div a {
   display: flex;
   align-items: center;
-  gap: 0.5em;
+  gap: 0.45em;
+  border-radius: 0.5em;
+  padding: 0.45em 0.7em;
+  transition: background 0.18s, color 0.18s;
+}
+.contact div a:hover {
+  background: #eaf2ff;
+  color: #1d3a6b;
 }
 
 @media screen and (max-width: 1100px) {
@@ -249,22 +320,35 @@ a {
   .portfolio {
     width: 90vw;
     min-width: 0;
-    max-width: 98vw;
+    max-width: 640px;
     margin: 1em auto;
+  }
+  .portfolio img {
+    height: 260px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .body {
-    padding: 7em 0.2em 1.5em 0.2em;
+    gap: 2em;
+    padding: 6em 0.75em 1.5em;
   }
   .portfolio {
     padding: 1em 0.5em;
   }
+  .portfolio img {
+    height: 220px;
+  }
+  .header {
+    justify-content: center;
+    padding: 0.5em 0.6em;
+  }
+  .header > ul {
+    gap: 0.2em;
+  }
   .self p {
-    width: 95vw;
-    min-width: 0;
     font-size: 1em;
+    line-height: 1.6;
   }
   .header > ul li {
     min-width: 2.8em;

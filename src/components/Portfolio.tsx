@@ -1,6 +1,5 @@
 import { ProjectType } from './Portfolios';
 import React from 'react';
-const { v4: uuidv4 } = require('uuid');
 
 interface Props {
   project: ProjectType;
@@ -9,65 +8,33 @@ interface Props {
 function Portfolio({ project }: Props) {
   if (project) {
     return (
-      <div
-        className="portfolio"
-        id="portfolio"
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-        }}
-      >
-        <div
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            gap: '1rem',
-            textAlign: 'center',
-          }}
-        >
+      <div className="portfolio">
+        <div className="portfolio-header">
           <h2>{project.name}</h2>
           <div className="builtwith">
             {project.builtwith.map((el: React.ReactNode) => {
-              return <span key={uuidv4()}>{el}</span>;
+              return <span key={`${project.key}-${el}`}>{el}</span>;
             })}
           </div>
         </div>
 
-        <a href={project.link} target="_blank" rel="noreferrer noopener">
-          <img src={project.picture} alt="" />
-        </a>
-        <div
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            gap: '1rem',
-          }}
+        <a
+          className="portfolio-preview"
+          href={project.link || project.repo}
+          aria-label={`${project.name} project preview`}
+          target="_blank"
+          rel="noreferrer noopener"
         >
+          <img src={project.picture} alt={`${project.name} screenshot`} />
+        </a>
+        <div className="portfolio-content">
           <p>{project.description}</p>
-          <div
-            className="features-container"
-            style={{
-              display: 'flex',
-              flexDirection: 'row',
-              justifyContent: 'center',
-              alignItems: 'center',
-            }}
-          >
+          <div className="features-container">
             {project.features.map((feature, idx) => {
               return <span key={idx}>{feature}</span>;
             })}
           </div>
-          <div
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'center',
-              alignItems: 'center',
-              gap: '0.5rem',
-            }}
-          >
+          <div className="portfolio-actions">
             {project.link ? (
               <a href={project.link} target="_blank" rel="noreferrer noopener">
                 Live Demo

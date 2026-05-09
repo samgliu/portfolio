@@ -30,7 +30,7 @@ function Portfolios() {
         name: 'StockSense',
         picture: stockSensePic,
         builtwith: [
-          'K8S',
+          'Kubernetes',
           'FastAPI',
           'Airflow',
           'PostgreSQL',
@@ -46,6 +46,18 @@ function Portfolios() {
       },
       {
         key: '01',
+        name: 'Data Visualization',
+        picture: dataVizPic,
+        builtwith: ['TypeScript', 'D3', 'React', 'Vega-Lite'],
+        description: [
+          'A data visualization web app built with React and D3 libraries.',
+        ],
+        features: ['Data Visualization'],
+        link: 'https://samgliu.github.io/data_visualization_demo/',
+        repo: 'https://github.com/samgliu/data_visualization_demo',
+      },
+      {
+        key: '02',
         name: 'Odin Book',
         picture: odinBookPic,
         builtwith: ['Node.js', 'Express', 'MongoDB', 'React'],
@@ -60,10 +72,10 @@ function Portfolios() {
         repo: 'https://github.com/samgliu/Odinbook-Client',
       },
       {
-        key: '02',
+        key: '03',
         name: 'Instagram Clone',
         picture: instagramPic,
-        builtwith: ['REACT', 'Firebase', 'HTML', 'Javascript', 'CSS'],
+        builtwith: ['React', 'Firebase', 'HTML', 'JavaScript', 'CSS'],
         description: [
           'A Instagram clone web app built with React and Firebase.',
         ],
@@ -75,18 +87,6 @@ function Portfolios() {
         ],
         link: 'https://samgliu.github.io/instagram-clone',
         repo: 'https://github.com/samgliu/instagram-clone',
-      },
-      {
-        key: '03',
-        name: 'Data Visualization',
-        picture: dataVizPic,
-        builtwith: ['Typescript', 'D3', 'React', 'vega-lite'],
-        description: [
-          'A data visualization web app built with React and D3 libraries.',
-        ],
-        features: ['Data Visualization'],
-        link: 'https://samgliu.github.io/data_visualization_demo/',
-        repo: 'https://github.com/samgliu/data_visualization_demo',
       },
       {
         key: '04',
@@ -114,7 +114,7 @@ function Portfolios() {
   }, []);
   if (projects) {
     return (
-      <div className="portfolios">
+      <div className="portfolios" id="portfolio">
         {projects.map((project: ProjectType) => {
           return <Portfolio key={project.key} project={project} />;
         })}

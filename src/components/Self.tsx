@@ -2,7 +2,7 @@ import React from 'react';
 
 function Self() {
   return (
-    <div className="self">
+    <section className="self" aria-label="About Sam Liu">
       <p>
         Hi, I’m Sam Liu, a full-stack software engineer focused on web applications, AI-integrated systems, and data-driven products.
 
@@ -10,7 +10,7 @@ function Self() {
 
         I like building practical products that solve real problems and create better user experiences. Let’s connect.
       </p>
-    </div>
+    </section>
   );
 }
 

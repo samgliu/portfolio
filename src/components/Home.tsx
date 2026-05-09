@@ -8,11 +8,13 @@ function Home() {
     return (
         <div className="home" id="home">
             <Header />
-            <div className="body">
-                <h1>Portfolio</h1>
-                <Portfolios />
-            </div>
-            <Self />
+            <main className="body">
+                <section className="portfolio-section" aria-labelledby="portfolio-heading">
+                    <h1 id="portfolio-heading">Portfolio</h1>
+                    <Portfolios />
+                </section>
+                <Self />
+            </main>
             <Contact />
         </div>
     );

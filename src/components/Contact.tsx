@@ -6,13 +6,17 @@ function Contact() {
   return (
     <div className="contact" id="contact">
       <div>
-        <a href="https://github.com/samgliu">
+        <a href="https://github.com/samgliu" target="_blank" rel="noreferrer noopener">
           <FaGithub />
           Github
         </a>
       </div>
       <div>
-        <a href="https://www.linkedin.com/in/sam-liu-78b432124/">
+        <a
+          href="https://www.linkedin.com/in/sam-liu-78b432124/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           <FaLinkedin />
           Linkedin
         </a>
