@@ -36,6 +36,7 @@ function Portfolios() {
           'TypeScript',
           'SQLite',
           'Docker',
+          'Playwright',
         ],
         description: [
           'AI agent trace system for inspecting OpenAI Agents-compatible runs, tool calls, evaluations, and FastMCP-powered workflows.',
@@ -44,7 +45,8 @@ function Portfolios() {
           'Agent Trace System',
           'Tool Call Inspection',
           'Live Ingestion',
-          'FastMCP Tools',
+          'Multi-Agent Workflow',
+          'MCP Tool Calls',
         ],
         repo: 'https://github.com/samgliu/agent-trace/tree/development',
 
